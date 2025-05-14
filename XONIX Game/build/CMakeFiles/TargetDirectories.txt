@@ -1,0 +1,3 @@
+/home/mahnoor/Desktop/project/build/CMakeFiles/xonix.dir
+/home/mahnoor/Desktop/project/build/CMakeFiles/edit_cache.dir
+/home/mahnoor/Desktop/project/build/CMakeFiles/rebuild_cache.dir
