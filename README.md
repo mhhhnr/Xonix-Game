@@ -45,7 +45,36 @@ whenever a fill is completed.
 # Powerup System
 Next, we implemented the powerup system which we found very challenging. Thresholds are
 designed using the function `checkpower()`:
+## Powerup System
+The function in the end ensures that first powerup is given at 50 score and additional powerups are granted every 30 points after that. Powerups are stacked in `powerups` and can be used with $\text{P}$ key which results in enemies freezing for 3 seconds along with background sound being produced.
 
+## Scoreboard
+`Highscores.txt` file is created that stores 5 highest scores in descending order the function `sortscore(score)` is called in the gameover section to update the score if necesssry. Scoreboard display is integrated in the menu.
+
+## Two Player Mode
+We implemented logic for shared gameplay using arrows for player 1 and $\text{W}$, $\text{A}$, $\text{S}$, $\text{D}$ keys for player 2. Upon collision of both players, the game ends. 
+
+## Music
+Lastly, we added background music in the game. Music is also played when powerups are used.
+
+## Testing
+In the very end, we cleaned our code for better understanding and added comments along with fixing the indentation. A few bugs were fixed and we tried to refine the game as much as we could.
+
+## Game Development Approach
+Our approach to developing the Xonix game emphasized incremental progress. We tried to implement features step by step, slowly but gradually. Upon facing challenges, we divided the problem into smaller pieces and tried to figure out the solution. We started off by setting the core elements of the game including global constants and the necessary SFML resources. To make the code cleaner and easier to debug we made separate functions for level selection, score handling, powerups etc. SFML is used to for rendering the graphics handling user input, displaying text, background music and sound effects. After implementing each feature, we immediately tested it to ensure proper functioning and we resolved any arising bugs before moving forward. Game over screen, colors and audio added to enhance player’s experience.
+
+## Work Flow Diagram
+
+
+## Implementation Progress of Each Feature According to Requirements
+* **Basic features:** Single player mode is implemented. Start and end menus are created and two player mode is implemented.
+* **Difficulty and enemies:** Easy, medium, hard and continuous modes are correctly implemented.
+* **Movement counter:** The number of moves made by player are accurately tracked and displayed where a move is counted each time a player builds a tile.
+* **Enemy speed and pattern:** The enemy speed increases every 20 seconds and a zigzag pattern is formed after 30 seconds.
+* **Scoring and rewards:** Points are continuously added along with bonuses. Powerups are properly implemented upon reaching certain score and unused powerups are stacked.
+* **Scoreboard:** Top 5 highest scores are stored in a text file `highscores.txt`.
+* **Two player mode:** Two players share the game board and player two plays using $\text{W}$, $\text{A}$, $\text{S}$, $\text{D}$ keys. Upon collision game ends.
+* **Bonus features:** Background music is added throughput the game and sound effect is added for when power ups are used. The menu is made using different colors.
 ```cpp
 void checkpower()
 {
