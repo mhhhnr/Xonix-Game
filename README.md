@@ -64,6 +64,7 @@ In the very end, we cleaned our code for better understanding and added comments
 Our approach to developing the Xonix game emphasized incremental progress. We tried to implement features step by step, slowly but gradually. Upon facing challenges, we divided the problem into smaller pieces and tried to figure out the solution. We started off by setting the core elements of the game including global constants and the necessary SFML resources. To make the code cleaner and easier to debug we made separate functions for level selection, score handling, powerups etc. SFML is used to for rendering the graphics handling user input, displaying text, background music and sound effects. After implementing each feature, we immediately tested it to ensure proper functioning and we resolved any arising bugs before moving forward. Game over screen, colors and audio added to enhance player’s experience.
 
 ## Work Flow Diagram
+<img width="495" height="188" alt="image" src="https://github.com/user-attachments/assets/3895ff8b-c3ff-4758-938c-9ed2270f95da" />
 
 
 ## Implementation Progress of Each Feature According to Requirements
